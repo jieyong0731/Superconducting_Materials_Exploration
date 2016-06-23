@@ -62,7 +62,8 @@ dev.copy(png,'figures/histogram.png')
 dev.off()
 par(mfrow=c(1,1))
 ```  
-![](figures/histogram.png)
+
+<img src="figures/histogram.png" width="800" height="800" />
 
 We noticed that all three feature ranges are similar(between -10 to 10). So we will skip the feature normalization before future analysis. Also notice that there are some peaks in the histogram data.
 
@@ -74,8 +75,8 @@ dev.copy(png,'figures/pairs.png')
 dev.off()
 par(mfrow=c(1,1))
 ```  
-![](figures/pairs.png)
 
+<img src="figures/pairs.png" width="800" height="800" />
 ## Model Building
 
 First, a simple linear model is used to predict Tc:
@@ -128,7 +129,8 @@ dev.copy(png,'figures/tree.png')
 dev.off()
 par(mfrow=c(1,1))
 ```
-![](figures/tree.png)
+
+<img src="figures/tree.png" width="800" height="800" />
 
 The decision tree uses dX as the first decision. This can be confirmed by the hisogram plot of dX labeled with high Tc or low Tc.
 ```{r,echo=F}
@@ -141,7 +143,8 @@ dev.copy(png,'figures/dX.png')
 dev.off()
 par(mfrow=c(1,1))
 ```
-![](figures/dX.png)
+
+<img src="figures/dX.png" width="800" height="800" />
 
 ### k-nearest neighbours modeling
 Finally, knn is used:
@@ -177,7 +180,9 @@ abline(v=0)
 dev.copy(png,'figures/diagram.png')
 dev.off()
 ```
-![](figures/diagram.png)
+
+<img src="figures/diagram.png" width="800" height="800" />
+
 Bases on the this figure, it seems these three regions are not the sweet regions anymore. There might be some new regions emerging according to this figure.
 
 ## Summary
